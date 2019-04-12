@@ -32,6 +32,7 @@
 
 **4、** 提供了各种原生App功能的
 
+
 ## 开发方式
 
 ### 原生开发简介
@@ -121,6 +122,43 @@
 * `onUnload` 页面被关闭
 * `onHide` 页面被切隐藏
 
+`模板渲染更新`
+
+* `setData` 用于更新模板渲染的变量
+
+```
+/**
+ * 以Hello World 举例
+ */
+//XML文件
+<view>{{message}}</view>
+
+//js文件
+Page({
+	data() {
+		return {
+			message: ""
+		}
+	},
+	onLoad() {
+		setTimeout(() => {
+			this.setData({
+				message: "Hello World"
+			})
+		})
+	}
+})
+```
+
+#### 初学者必备入门知识点
+
+Page 如何编写模板、事件、样式、自定义脚本？
+
+* [微信端](https://developers.weixin.qq.com/miniprogram/dev/reference/api/Page.html)
+* [支付宝端](https://docs.alipay.com/mini/framework/page)
+
+
+以举例工程仓库[HelloWord仓库](./projects)
 
 从上图结构可以了解。小程序原先开发的项目结构并无很大差异，只是文件后缀名存在差异
 
