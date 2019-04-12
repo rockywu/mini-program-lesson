@@ -135,18 +135,22 @@
 
 //js文件
 Page({
-	data() {
-		return {
-			message: ""
-		}
-	},
-	onLoad() {
-		setTimeout(() => {
-			this.setData({
-				message: "Hello World"
-			})
-		})
-	}
+  /*
+   * data函数返回模板默认渲染数据
+   */
+  data() {
+    return {
+      message: ""
+    }
+  },
+  onLoad() {
+    setTimeout(() => {
+      //修改message 让模板重新渲染
+      this.setData({
+        message: "Hello World"
+      })
+    }, 1500)
+  }
 })
 ```
 
