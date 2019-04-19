@@ -103,7 +103,7 @@
 
 ### 小程序的生命周期
 
-![](./app-page-life-cycle.png)
+![](./images/app-page-life-cycle.png)
 
 > App和Page的生命周期支付宝和微信小程序基本一致
 
