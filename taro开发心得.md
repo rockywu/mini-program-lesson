@@ -126,7 +126,7 @@ taro build --type swan --watch
 
 Taro框架对通过内部转换将一个React代码转换为各端代码。
 
-Taro提供的Component组件的生命周期对应表：
+#### Taro生命周期
 
 |生命周期函数| 类型 |对标小程序| 描述|
 |:---:|:---:|:---:|:---:|
@@ -140,6 +140,8 @@ Taro提供的Component组件的生命周期对应表：
 |componentWillUpdate | React自带 | 无 | 组件即将更新前 |
 |componentDidUpdate | React自带 | 无 | 组件已更新 |
 | componentWillUnmount| React 自带 | Page.onUnload | 组件将被销毁 |
+
+#### Taro创建页面
 
 Taro统一使用Component组件创建小程序下的App，Page,Component对象
 
