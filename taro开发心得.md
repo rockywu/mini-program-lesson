@@ -291,28 +291,18 @@ class Home extends Component {
   componentDidHide() {}
 
   handleClick(value) {
-    console.log("handleClick", value);
     this.setState({
       current: value
     });
   }
 
   myTabEvent(value, index) {
-    console.log(777, value, index, this);
   }
 
   render() {
     const tabs = [
       { title: "热门" },
-      { title: "女装" },
-      { title: "百货" },
-      { title: "数码产品" },
-      { title: "鞋包" },
-      { title: "食品" },
-      { title: "母婴" },
-      { title: "内衣" },
-      { title: "电器" },
-      { title: "男装" }
+      { title: "女装" }
     ];
     return (
       <View className="container-fixed">
@@ -348,18 +338,24 @@ export default connect(
     return {
       system
     };
-  },
-  dispatch => ({
-    getInfo() {
-      console.log(dispatch);
-    }
-  })
+  }
 )(Home);
 
 ```
 
+#### Taro与React开发异同
 
+> 相同点：
 
+* 几乎一致的React开发体验
+* 支持组件式开发
+* 支持自定义事件
+
+> 不同点：
+
+* 自定义事件命名必须以on开头(原因由于小程序机制问题，小程序自定义组件自定义事件命名只支持on开头)
+* 新增不同生命周期
+* 组件通过使用方式的不同分为：应用、页面、组件这三个隐形状态，各自含有不同的生命周期函数。
 
 ### 相关文章来源
 
