@@ -155,7 +155,7 @@ Taro框架默认使用：app.js为项目入口文件
 
 在Taro中，App入口和页面入口组件都可以设定config配置，而自定义组件入口无config配置
 
-config设置注意点：
+> config设置注意点：
 
 config配置只支持`静态化`，原因是由于该备注将在编译过程中被提取成静态的JSON配置。
 
